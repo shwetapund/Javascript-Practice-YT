@@ -1,4 +1,4 @@
-// Primitive dataTyoes
+// *****************************Primitive dataTyoes*********************************
 
 /** / 7 categories : String, Number, Boolean, null, undefined, Symbol, BigInt
 
@@ -52,3 +52,37 @@ console.log(typeof myFunction);
 //null = Object
 //function = function , objectFunction
 //undefined = undefined
+
+//*********************************************************************************************
+
+// *****************************Memories*****************************
+
+//types of memory :1. Stack (Primitive type mien stack memry use hoti hein),
+//                 2. Heap (Non-Primitive) 
+
+//Stack : jub bhi stack memory use hoti hein uska mtlb kya heinjo bhi humne varible declare kra hein uska humein copy milta hein  OR
+
+//Heap : jub bhi memory heap ke ndar define hoti heinya koi object heap ke andar chala jaya hein t vha se apko milta hein reference original value ka to jo bhi change karenge to wo original value mein change honga
+
+//eg.
+
+let myhome = "DattaNagar"
+
+let anotherhome = myhome
+anotherhome = "deolali"
+
+console.log(myhome);
+console.log(anotherhome);
+
+let userOne = {
+    email: "user1@gmail.com",
+    upi: "user1"
+}
+
+let userTwo = userOne //ismein userTwo ko value keise milti hein to usko ab userOne ke valua ka ref milega 
+
+userTwo.email = "shweta@goole.com" //obj mien . se hum value ko acess kr skte hein
+
+console.log(userOne.email);
+console.log(userTwo.email);
+
