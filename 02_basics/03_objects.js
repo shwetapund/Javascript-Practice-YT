@@ -1,6 +1,7 @@
 //singleton = jo constructor se banega wo hamesha singleton banega
 
-//object literals
+//object literals 
+// ye niche wala object literal tha
 
 const mySymbol = Symbol("key1") //symbol declare
 
