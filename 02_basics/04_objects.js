@@ -17,7 +17,7 @@ const regularUser = {
         }
     }
 }
-console.log(regularUser.fullname?.userfullname.firsetname); 
+// console.log(regularUser.fullname?.userfullname.firsetname); 
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "a", 4: "b"}
@@ -43,12 +43,36 @@ const users = [
 ]
 users[1].email
 
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser));
-console.log(Object.values(tinderUser));
-console.log(Object.entries(tinderUser));
+// console.log(Object.keys(tinderUser));
+// console.log(Object.values(tinderUser));
+// console.log(Object.entries(tinderUser));
 
-console.log(tinderUser.hasOwnProperty('isLogged')); //check the property using hasOwnPrpoperty
+// console.log(tinderUser.hasOwnProperty('isLogged')); //check the property using hasOwnPrpoperty
 
 // **Object.assign = Copy the values of all of the enumerable own properties from one or more source objects to a target object. Returns the target object.
+
+
+//***********************************Object destructuring**********************************
+
+const course = {
+    coursename : "js is hindi",
+    price: "999",
+    courseInstamce: "shweta"
+}
+
+//course.courseInstamce== ye complex hein
+
+const {coursename, price, courseInstamce} = course //object destructuring ***ImP
+console.log(coursename, price);
+
+// *******************************JSON API**********************
+
+// {
+//     "name": "shweta",
+//     "mob": "35468"
+// }    //json object or api //ye ek object hi hota hein jiska kuch nam nahi hota
+
+
+
