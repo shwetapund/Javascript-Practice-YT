@@ -38,6 +38,43 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))  
 //to is tarah se bhi para meter liye jate hein
 
-console.log(loginUserMessage("sjweta")) //hum jub aise empty string pass ki to run krke o/p = just logged in
+// console.log(loginUserMessage("shweta")) //hum jub aise empty string pass ki to run krke o/p = just logged in
 
 //*****console.log(loginUserMessage())  jub hum kuch bhi value nahi pass krte to **undefined** ata hein*/ 
+
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+//... isko rest or spread operator kaha jata hein
+//**rest*...*:- mtlb humare pas jitna bhi item hein ye abhi bikhra bira hein isko sbko ek bundke mein pack kro aur muze dedo
+
+// console.log(calculateCartPrice(200, 300, 400, 2200));
+
+const user = {
+    username:"shweta",
+    priceu:188
+}
+
+function handleObject(anyObject){
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+// handleObject(user)
+handleObject({
+    username: "sunny",
+    price: 499
+})
+
+const myNewArray = [200, 400, 100, 500]
+
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+
+// console.log(returnSecondValue(myNewArray));
+
+console.log(returnSecondValue([200, 400, 600,700]));
+
+
+
+
