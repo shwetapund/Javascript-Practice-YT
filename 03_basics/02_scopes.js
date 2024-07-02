@@ -12,4 +12,49 @@ if(true) {
 
 // console.log(a);
 // console.log(b);
-console.log(c); 
+// console.log(c); 
+
+function one(){
+    const username = "shweta"
+
+    function two(){
+        const website = "youtube" //
+        console.log(username);
+    }
+    // console.log(website);
+     //hum bahar ke function ki value andar ke function access kr skte hein par andar ke function ki value bahar ka function nahi access kr sakta
+
+    two()
+}
+//one()
+
+if(true){
+    const username = " shweta"
+    if(username === " shweta"){
+        const add = "Hii"
+        // console.log(add + username);
+    }
+    // console.log(add);
+}
+// console.log(username);
+
+addone(2)
+function addone(num){
+    return num + 1
+}
+//jub humne aisa simple function banaya to hoisting mein kuch problem nahi ata pr 👆
+//agar humne variable declare krke kiya to error ati hein 👇
+const addTwo = function(num){
+    return num + 2
+}
+addTwo(5)
+
+//************* Closure and hoisting ************************
+
+//Hoisting:- In js a variable can used before it hs been declare
+//           A variable can be declaredafter it has been used.
+//           Hoisting makes vaiables accessible evenbefore thier creation 
+
+//Closure:- Closure are function inside a function 
+//          closure is access the values of variable of parent function even after it is returned
+
