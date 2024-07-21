@@ -22,6 +22,21 @@
 //Question 2 How to find the max and min value in a given array in js?
 //========>
 
+const newArray = [2,9,22,5,33,50,40]
+const maxNo=(arr)=>{
+    return arr.reduce(function(pre,cur){
+        return pre>cur?pre:cur
+    })
+}
+console.log(maxNo(newArray));
+
+const minNo=(arr)=>{
+    return arr.reduce(function(pre,cur){
+        return pre<cur?pre:cur
+    })
+}
+console.log(minNo(newArray));
+
 
 
 //***************************************Array imp que *********************/
