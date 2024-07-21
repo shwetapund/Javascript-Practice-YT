@@ -10,8 +10,7 @@
 // const orignial = array1.filter((ele, index, arr)=>arr.indexOf(ele)!==index)
 // console.log(orignial); //find the original elements
 
-//Question 2 How to find the max and min value in a given array in js?
-//========>
+//**********practice ************* */
 
 // const array = [3,"shweta",4,"shital",4,5,2,6]
 // const duplictes = array.filter((item, index,arr)=>arr.indexOf(item)!==index)
@@ -20,23 +19,36 @@
 // const orignial = [...new Set(array)]
 // console.log(orignial);
 
+//Question 2 How to find the max and min value in a given array in js?
+//========>
+
+
+
 //***************************************Array imp que *********************/
 
 //Q 1: ek array lijjye aur us ke andr kuch additional properties hein apko sirf uski original properties ko hi loop ke nadar display krna hein ?
 
-Array.prototype.extraProperty = "shweta"
-const arrayone = [2,3,5,6,4,1]
-for(let v in arrayone){
-    console.log(v);
-} 
+// Array.prototype.extraProperty = "shweta"
+// const arrayone = [2,3,5,6,4,1]
+// for(let v in arrayone){
+//     console.log(v);
+// } 
 //Agar aisa kiya to orginal or extra property bhi display hoti hein
 
 //*********************hasOwnProperty************************* 
 
-for(let v in arrayone){
-    if(arrayone.hasOwnProperty){
-        console.log(v);
-    }
-}
+// for(let v in arrayone){
+//     if(arrayone.hasOwnProperty){
+//         console.log(v);
+//     }
+// }
 
 
+//*******************************Sort method *************** */
+// const ArrayNumber = [5,3,1,8];
+// ArrayNumber.sort();
+// console.log(ArrayNumber);
+
+// const arr = ["Harshad", "Rutuja", "Prachi", "Siddhi"];
+// arr.sort();
+// console.log(arr);
